@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stag Rock CPA | Private Business Valuation | Virginia Beach, VA</title>
+  <meta name="description" content="Private business valuation services in Virginia Beach, Virginia.  Stag Rock CPA, PLLC provides valuation reports using income-based, market-based, and precedent transaction analysis for shareholder transactions, corporate planning, and estate and gift compliance.  Reed Foster, CFA, CPA.">
+  <meta name="keywords" content="business valuation Virginia Beach, private business valuation, CPA Virginia Beach, business appraisal Hampton Roads, shareholder buyout valuation, DCF valuation, comparable company analysis, Reed Foster CPA CFA">
+  <meta property="og:title" content="Stag Rock CPA | Private Business Valuation | Virginia Beach, VA">
+  <meta property="og:description" content="Private business valuation services in Virginia Beach, Virginia.  Income-based, market-based, and precedent transaction analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stagrockcpa.com">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://stagrockcpa.com">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Stag Rock CPA, PLLC",
+    "description": "Private business valuation services for business owners, shareholders, and their advisors.  Income-based, market-based, and precedent transaction analysis.",
+    "url": "https://stagrockcpa.com",
+    "email": "info@stagrockcpa.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Virginia Beach",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.8529,
+      "longitude": -75.9780
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Reed Foster",
+      "jobTitle": "Managing Member",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional Certification",
+          "name": "CFA Charterholder"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional License",
+          "name": "Certified Public Accountant",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Virginia Board of Accountancy"
+          }
+        }
+      ]
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Virginia Beach",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Virginia"
+      }
+    },
+    "knowsAbout": ["Business Valuation", "Discounted Cash Flow", "Comparable Company Analysis", "Precedent Transaction Analysis", "Shareholder Buyouts", "Estate and Gift Valuation"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Valuation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Private Business Valuation",
+            "description": "Comprehensive valuation reports using income-based, market-based, and precedent transaction methodologies."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Individual Tax Return Preparation",
+            "description": "Individual tax return preparation for clients of Stag Rock LLC."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F2ED;
+      --bg-alt: #EBE8E1;
+      --dark: #1C2420;
+      --dark-card: rgba(122, 139, 111, 0.08);
+      --text: #2B2D2A;
+      --text-muted: #6A6D66;
+      --accent: #6B7F5E;
+      --accent-light: #8A9E7D;
+      --accent-faint: rgba(107, 127, 94, 0.12);
+      --border: rgba(107, 127, 94, 0.25);
+      --white: #F4F2ED;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.25rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+
+    nav.scrolled {
+      background: var(--bg);
+      box-shadow: 0 1px 0 var(--border);
+      padding: 0.9rem 3rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      position: relative;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--white);
+      transition: color 0.4s;
+    }
+
+    nav.scrolled .nav-brand { color: var(--text); }
+
+    .nav-logo {
+      height: 28px;
+      width: auto;
+      transition: opacity 0.4s;
+    }
+
+    .nav-logo-white { opacity: 1; }
+
+    .nav-logo-dark {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+    }
+
+    nav.scrolled .nav-logo-white { opacity: 0; }
+    nav.scrolled .nav-logo-dark { opacity: 1; }
+
+    .nav-links {
+      display: flex;
+      gap: 2.25rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(244, 242, 237, 0.7);
+      transition: color 0.3s;
+    }
+
+    nav.scrolled .nav-links a { color: var(--text-muted); }
+    .nav-links a:hover { color: var(--accent-light); }
+    nav.scrolled .nav-links a:hover { color: var(--accent); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 1.5px;
+      background: var(--white);
+      transition: background 0.4s, transform 0.3s;
+    }
+
+    nav.scrolled .hamburger span { background: var(--text); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--dark);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(244, 242, 237, 0.8);
+      transition: color 0.3s;
+    }
+
+    .mobile-menu a:hover { color: var(--accent-light); }
+
+    .mobile-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 3rem;
+      background: none;
+      border: none;
+      color: rgba(244, 242, 237, 0.7);
+      font-size: 1.75rem;
+      cursor: pointer;
+      font-weight: 300;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--dark);
+      padding: 10rem 2rem 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(107, 127, 94, 0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(107, 127, 94, 0.04) 0%, transparent 50%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-logo {
+      height: 160px;
+      width: auto;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4.5rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-rule {
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0 auto 2.5rem;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(244, 242, 237, 0.75);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 2rem; }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.25rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading.light { color: var(--white); }
+
+    .body-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      max-width: 680px;
+    }
+
+    .body-text + .body-text { margin-top: 1.25rem; }
+
+    /* ── ABOUT ── */
+    .about { background: var(--bg); }
+
+    /* ── METHODOLOGY (dark) ── */
+    .methodology {
+      background: var(--dark);
+      padding: 6rem 2rem;
+    }
+
+    .methodology .section-label { color: var(--accent-light); }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .method-card {
+      background: rgba(107, 127, 94, 0.06);
+      border: 1px solid rgba(107, 127, 94, 0.15);
+      padding: 2.5rem 2rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .method-card:hover {
+      border-color: rgba(107, 127, 94, 0.35);
+      background: rgba(107, 127, 94, 0.1);
+    }
+
+    .method-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      color: var(--accent-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .method-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .method-body {
+      font-size: 0.88rem;
+      color: rgba(244, 242, 237, 0.6);
+      line-height: 1.8;
+    }
+
+    /* ── ENGAGEMENT ── */
+    .engagement { background: var(--bg-alt); }
+
+    .engagement-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .engagement-item {
+      padding: 2rem;
+      background: var(--bg);
+      border-left: 2px solid var(--accent);
+    }
+
+    .engagement-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .engagement-item p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ── DELIVERABLE ── */
+    .deliverable {
+      background: var(--dark);
+      padding: 6rem 2rem;
+    }
+
+    .deliverable .section-label { color: var(--accent-light); }
+    .deliverable .section-heading { color: var(--white); }
+
+    .deliverable .body-text {
+      color: rgba(244, 242, 237, 0.6);
+    }
+
+    .deliverable .body-text strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    /* ── DIFFERENTIATOR ── */
+    .differentiator {
+      background: var(--bg);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .diff-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .diff-body {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── CREDENTIALS ── */
+    .credentials {
+      background: var(--dark);
+      padding: 6rem 2rem;
+    }
+
+    .credentials .section-label { color: var(--accent-light); }
+
+    .cred-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2.5rem;
+    }
+
+    .cred-block h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cred-block p, .cred-block li {
+      font-size: 0.88rem;
+      color: rgba(244, 242, 237, 0.6);
+      line-height: 1.85;
+    }
+
+    .cred-list {
+      list-style: none;
+    }
+
+    .cred-list li {
+      padding: 0.35rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .cred-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 4px;
+      height: 4px;
+      background: var(--accent-light);
+      border-radius: 50%;
+    }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--bg); }
+
+    .contact-intro {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+      max-width: 560px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .contact-item-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-item-value {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .contact-item-value a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.3s;
+    }
+
+    .contact-item-value a:hover { border-color: var(--accent); }
+
+    .contact-item + .contact-item { margin-top: 1.5rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      padding: 3.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .footer-links a {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(244, 242, 237, 0.5);
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--accent-light); }
+
+    .footer-disclosure {
+      font-size: 0.78rem;
+      color: rgba(244, 242, 237, 0.35);
+      line-height: 1.85;
+      max-width: 800px;
+    }
+
+    .footer-copyright {
+      font-size: 0.75rem;
+      color: rgba(244, 242, 237, 0.3);
+      margin-top: 2rem;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      nav.scrolled { padding: 0.75rem 1.5rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .hero-mark { font-size: 2.75rem; }
+      .hero-logo { height: 120px; }
+      .hero-tagline { font-size: 1.15rem; }
+
+      section { padding: 4rem 1.5rem; }
+
+      .section-heading { font-size: 1.75rem; }
+
+      .method-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+      .method-card { padding: 2rem 1.5rem; }
+
+      .engagement-grid { grid-template-columns: 1fr; }
+
+      .diff-quote { font-size: 1.35rem; }
+
+      .cred-content { grid-template-columns: 1fr; gap: 2rem; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .footer-links { flex-wrap: wrap; gap: 1rem; }
+
+      .mobile-close { right: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-brand">
+      <img src="logo-white.svg" alt="" class="nav-logo nav-logo-white">
+      <img src="logo-dark.svg" alt="" class="nav-logo nav-logo-dark">
+      Stag Rock CPA
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#engagements">Engagements</a></li>
+      <li><a href="#deliverable">Deliverable</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="menuOpen" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="menuClose">&times;</button>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#methodology" onclick="closeMenu()">Methodology</a>
+    <a href="#engagements" onclick="closeMenu()">Engagements</a>
+    <a href="#deliverable" onclick="closeMenu()">Deliverable</a>
+    <a href="#credentials" onclick="closeMenu()">Credentials</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo-white.svg" alt="Stag Rock CPA" class="hero-logo">
+      <div class="hero-mark">Stag Rock CPA</div>
+      <div class="hero-rule"></div>
+      <div class="hero-tagline">Private business valuation grounded in the fundamentals of the business and the realities of the market.</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container fade-in">
+      <div class="section-label">About</div>
+      <h2 class="section-heading">Understanding what a business is worth</h2>
+      <p class="body-text">Stag Rock CPA, PLLC provides private business valuation services for business owners, shareholders, and their advisors.  This is a small, selective practice.  We take on a limited number of engagements at a time, and the scope and methodology are tailored to the specific circumstances of the business and the purpose of the valuation.</p>
+      <p class="body-text">The work draws on the same valuation discipline that underpins Stag Rock LLC, our registered investment advisory practice.  The difference is the subject.  Rather than evaluating publicly traded securities, we apply that framework to private businesses, where the stakes are often personal and the data is never as clean.</p>
+      <p class="body-text">We are based in Virginia Beach, Virginia, and work directly with clients in person.  Valuation engagements require a real understanding of the business, its operations, and its people.  That starts with sitting across the table.</p>
+      <p class="body-text">For clients of Stag Rock LLC, our investment advisory practice, we also prepare individual tax returns on a limited basis.</p>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="methodology" id="methodology">
+    <div class="container">
+      <div class="section-label fade-in">Methodology</div>
+      <h2 class="section-heading light fade-in">Three approaches, one conclusion</h2>
+      <p class="body-text fade-in" style="color: rgba(244,242,237,0.6); margin-bottom: 1rem;">A credible valuation requires more than one lens.  We apply three established approaches and reconcile them based on the facts and circumstances of each engagement.</p>
+      <div class="method-grid">
+        <div class="method-card fade-in">
+          <div class="method-num">01</div>
+          <div class="method-title">Income-Based</div>
+          <div class="method-body">Discounted cash flow analysis translating the future earnings power of the business into a present value.  This requires building a defensible projection of the business and selecting discount rates that reflect its specific risk profile.</div>
+        </div>
+        <div class="method-card fade-in">
+          <div class="method-num">02</div>
+          <div class="method-title">Market-Based</div>
+          <div class="method-body">Comparable company analysis drawing on publicly traded peers and, where available, private transaction data.  Valuation multiples are selected and adjusted to reflect the size, growth, and risk characteristics of the subject company.</div>
+        </div>
+        <div class="method-card fade-in">
+          <div class="method-num">03</div>
+          <div class="method-title">Precedent Transactions</div>
+          <div class="method-body">Analysis of actual M&amp;A transactions involving similar businesses.  This approach captures control premiums, strategic synergies, and market conditions at the time of sale, providing a real-world benchmark for value.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENTS -->
+  <section class="engagement" id="engagements">
+    <div class="container">
+      <div class="section-label fade-in">Engagements</div>
+      <h2 class="section-heading fade-in">When valuation matters</h2>
+      <p class="body-text fade-in" style="margin-bottom: 0;">Every engagement produces a written valuation report documenting the analysis, the assumptions, and the conclusion of value.  Common contexts include:</p>
+      <div class="engagement-grid">
+        <div class="engagement-item fade-in">
+          <h3>Shareholder Transactions</h3>
+          <p>Buy-sell agreements, partner buyouts, minority interest redemptions, and ownership transitions where an independent opinion of value is needed by one or both sides.</p>
+        </div>
+        <div class="engagement-item fade-in">
+          <h3>Corporate Planning</h3>
+          <p>Strategic decision-making, capital allocation, and ownership restructuring.  Understanding what the business is worth today informs what it could be worth under different scenarios.</p>
+        </div>
+        <div class="engagement-item fade-in">
+          <h3>Estate &amp; Gift</h3>
+          <p>Valuations supporting estate planning, gift tax compliance, and wealth transfer strategies involving closely held business interests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE DELIVERABLE -->
+  <section class="deliverable" id="deliverable">
+    <div class="container">
+      <div class="section-label fade-in">The Deliverable</div>
+      <h2 class="section-heading fade-in">What to expect</h2>
+      <p class="body-text fade-in">Every engagement starts with an initial meeting.  We sit down together to understand the business, the purpose of the valuation, the valuation date, and who will be relying on the report.  That conversation determines the scope of the engagement and the type of report we produce.  Our reports follow the structure and framework of the AICPA Statement on Standards for Valuation Services No. 1 (SSVS No. 1), which defines two types of engagements.  The process and deliverable are different for each.</p>
+
+      <p class="body-text fade-in" style="margin-top: 2rem;"><strong>Valuation Engagement</strong></p>
+      <p class="body-text fade-in" style="margin-top: 0.75rem;">This is the most comprehensive level of service.  The analyst is free to apply whatever valuation approaches and methods are deemed appropriate, and the result is a conclusion of value.  This is the standard when the report needs to stand up to external scrutiny, whether that means the IRS, a court, a regulatory filing, or a counterparty on the other side of a transaction.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">The process begins with establishing a data room.  We request the corporate documents that define the business: organizational filings, operating agreements, shareholder agreements, capitalization tables, and any relevant contracts or legal proceedings.  We also request historical financial statements and tax returns.  This is the foundation of the analysis, and thoroughness here matters.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">We then conduct in-depth management interviews and, where appropriate, visit the business itself.  The people running the business understand it better than anyone, and those conversations inform how we evaluate the company's operations, competitive position, and risk profile.  A site visit adds a dimension that financial statements cannot capture: the condition of the facilities, the equipment, the workflow, and how the operation actually functions day to day.  These firsthand observations strengthen the analysis and support the credibility of the report if it is ever scrutinized by a counterparty, a court, or the IRS.  We also research the broader economic and industry environment independently to place the business in context.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">Financial projections are a critical input, particularly for the income-based approach.  Management is in the best position to articulate realistic expectations for revenue growth, margin trajectory, capital needs, and strategic direction.  We work with the client to develop or refine those projections, pressure-test the assumptions, and translate them into the valuation model.  The quality of the projections directly affects the quality of the conclusion.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">The deliverable is a written report documenting the full analysis: scope and standard of value, economic and industry overview, business description, company-specific risk considerations, financial statement adjustments, valuation assumptions, and the reconciled conclusion of value.  Supporting schedules, exhibits, and source citations are included in the appendices.  The report may be issued as a detailed report covering the complete analysis or a summary report presenting the key findings in a more condensed format.</p>
+
+      <p class="body-text fade-in" style="margin-top: 2rem;"><strong>Calculation Engagement</strong></p>
+      <p class="body-text fade-in" style="margin-top: 0.75rem;">A calculation engagement is more limited in scope.  The analyst and the client agree upfront on the specific valuation approaches, methods, and extent of procedures to be applied.  The result is a calculated value rather than a conclusion of value.  Because a calculation engagement does not include all the procedures required in a valuation engagement, the process is lighter and the timeline is typically shorter.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">The data requirements are narrower.  We still need financial statements and the key corporate documents, but the depth of independent research, the scope of management interviews, and the level of projection development are all scaled to the agreed-upon procedures.  In some cases, the client may already have projections or a preferred methodology in mind, and the engagement is structured around that framework from the start.</p>
+      <p class="body-text fade-in" style="margin-top: 1.25rem;">The deliverable is a calculation report that documents the agreed-upon procedures and the resulting calculated value.  Calculation engagements are typically appropriate for internal planning, preliminary transaction discussions, or situations where both parties need a grounded estimate of value without the full scope of a valuation engagement.</p>
+
+      <p class="body-text fade-in" style="margin-top: 2rem;"><strong>Oral Reports</strong></p>
+      <p class="body-text fade-in" style="margin-top: 0.75rem;">For either type of engagement, the SSVS framework also permits an oral report as the deliverable.  In those cases, the findings are communicated verbally rather than in a written document.  This can be appropriate for early-stage planning conversations, a preliminary read on whether a transaction price is reasonable, or other situations where a formal written report is premature.  The underlying analysis is still documented internally, but the client receives the conclusion through direct discussion rather than a bound report.</p>
+
+      <p class="body-text fade-in" style="margin-top: 2rem;">We determine the right engagement type and deliverable format during the initial consultation, based on the purpose of the valuation, its intended audience, and how it will be used.</p>
+    </div>
+  </section>
+  <section class="differentiator">
+    <div class="container fade-in">
+      <div class="diff-quote">The analyst, the author, and the point of contact are the same person.</div>
+      <p class="diff-body">Stag Rock CPA does not delegate the analytical work.  The person who builds the model, writes the report, and defends the conclusion is the same person you speak with throughout the engagement.  That continuity is by design.</p>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section class="credentials" id="credentials">
+    <div class="container">
+      <div class="section-label fade-in">Credentials</div>
+      <h2 class="section-heading light fade-in">Reed Foster, CFA, CPA</h2>
+      <div class="cred-content">
+        <div class="cred-block fade-in">
+          <h3>Background</h3>
+          <p>Reed founded Stag Rock CPA in conjunction with Stag Rock LLC, his investment management firm.  His professional background spans investment banking at Moelis &amp; Company in New York, portfolio management, and eleven years of naval aviation including service as a TOPGUN graduate and instructor pilot.  He is a Boeing 777 First Officer with a major cargo carrier.</p>
+        </div>
+        <div class="cred-block fade-in">
+          <h3>Qualifications</h3>
+          <ul class="cred-list">
+            <li>CFA Charterholder</li>
+            <li>Certified Public Accountant, Virginia (License #53657)</li>
+            <li>MBA, William &amp; Mary</li>
+            <li>Master of Accounting, UNC Chapel Hill</li>
+            <li>B.S. Systems Engineering, U.S. Naval Academy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label fade-in">Contact</div>
+      <h2 class="section-heading fade-in">Get in touch</h2>
+      <p class="contact-intro fade-in">To discuss a potential engagement or learn more about our valuation practice, please reach out.</p>
+      <div class="contact-grid fade-in">
+        <div>
+          <div class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:info@stagrockcpa.com">info@stagrockcpa.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Virginia Beach, Virginia</div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-item">
+            <div class="contact-item-label">Related Practice</div>
+            <div class="contact-item-value"><a href="https://stagrockllc.com" target="_blank" rel="noopener">Stag Rock LLC</a>, Investment Management</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Regulatory</div>
+            <div class="contact-item-value"><a href="https://cpaportal.boa.virginia.gov/Verification/" target="_blank" rel="noopener">Virginia Board of Accountancy</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#engagements">Engagements</a></li>
+        <li><a href="#deliverable">Deliverable</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://cpaportal.boa.virginia.gov/Verification/" target="_blank" rel="noopener">Virginia Board of Accountancy</a></li>
+      </ul>
+      <p class="footer-disclosure">Stag Rock CPA, PLLC is a Virginia professional limited liability company.  Valuation services are provided on a case-by-case engagement basis.  Nothing on this website constitutes an offer to provide services or a guarantee of any particular outcome.  All valuation conclusions are opinions of value as of a specific date and are subject to the assumptions and limiting conditions described in each engagement report.</p>
+      <div class="footer-copyright">&copy; 2026 Stag Rock CPA, PLLC.  All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile menu
+    const mobileMenu = document.getElementById('mobileMenu');
+    document.getElementById('menuOpen').addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+    document.getElementById('menuClose').addEventListener('click', closeMenu);
+    function closeMenu() { mobileMenu.classList.remove('open'); }
+
+    // Fade in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
