@@ -58,10 +58,6 @@
     }
 
     .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      position: relative;
       font-family: 'Cormorant Garamond', serif;
       font-weight: 500;
       font-size: 1.15rem;
@@ -73,26 +69,6 @@
     }
 
     nav.scrolled .nav-brand { color: var(--text); }
-
-    .nav-logo {
-      height: 32px;
-      width: auto;
-      transition: opacity 0.4s;
-    }
-
-    .nav-logo-white {
-      mix-blend-mode: screen;
-      opacity: 1;
-    }
-
-    .nav-logo-dark {
-      mix-blend-mode: multiply;
-      opacity: 0;
-      position: absolute;
-    }
-
-    nav.scrolled .nav-logo-white { opacity: 0; }
-    nav.scrolled .nav-logo-dark { opacity: 1; }
 
     .nav-links {
       display: flex;
@@ -203,14 +179,6 @@
     .hero-content {
       position: relative;
       z-index: 1;
-    }
-
-    .hero-logo {
-      height: 160px;
-      width: auto;
-      display: block;
-      margin: 0 auto 2rem;
-      mix-blend-mode: screen;
     }
 
     .hero-mark {
@@ -560,7 +528,6 @@
       .hamburger { display: flex; }
 
       .hero-mark { font-size: 2.75rem; }
-      .hero-logo { height: 120px; }
       .hero-tagline { font-size: 1.15rem; }
 
       section { padding: 4rem 1.5rem; }
@@ -588,11 +555,7 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#" class="nav-brand">
-      <img src="logo-white.png" alt="" class="nav-logo nav-logo-white">
-      <img src="logo-dark.png" alt="" class="nav-logo nav-logo-dark">
-      Stag Rock CPA
-    </a>
+    <a href="#" class="nav-brand">Stag Rock CPA</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#methodology">Methodology</a></li>
@@ -620,7 +583,6 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <img src="logo-white.png" alt="Stag Rock CPA" class="hero-logo">
       <div class="hero-mark">Stag Rock CPA</div>
       <div class="hero-rule"></div>
       <div class="hero-tagline">Private business valuation grounded in the fundamentals of the business and the realities of the market.</div>
