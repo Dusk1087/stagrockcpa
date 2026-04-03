@@ -493,11 +493,32 @@
 
     .credentials .section-label { color: var(--accent-light); }
 
-    .cred-content {
+    .cred-bio {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 3rem;
       margin-top: 2.5rem;
+      align-items: start;
+    }
+
+    .cred-photo-wrap {
+      position: relative;
+      padding: 6px;
+      border: 1px solid var(--accent);
+    }
+
+    .cred-photo {
+      width: 100%;
+      display: block;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .cred-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
     .cred-block h3 {
@@ -654,7 +675,8 @@
 
       .diff-quote { font-size: 1.35rem; }
 
-      .cred-content { grid-template-columns: 1fr; gap: 2rem; }
+      .cred-bio { grid-template-columns: 1fr; gap: 2rem; }
+      .cred-photo-wrap { max-width: 280px; }
 
       .contact-grid { grid-template-columns: 1fr; }
 
@@ -805,20 +827,25 @@
     <div class="container">
       <div class="section-label fade-in">Credentials</div>
       <h2 class="section-heading light fade-in">Reed Foster, CFA, CPA</h2>
-      <div class="cred-content">
-        <div class="cred-block fade-in">
-          <h3>Background</h3>
-          <p>Reed founded Stag Rock CPA in conjunction with Stag Rock LLC, his investment management firm.  His professional background spans investment banking at Moelis &amp; Company in New York, portfolio management, and eleven years of naval aviation including service as a TOPGUN graduate and instructor pilot.  He is a Boeing 777 airline pilot with a major cargo carrier.</p>
+      <div class="cred-bio fade-in">
+        <div class="cred-photo-wrap">
+          <img src="headshot.jpg" alt="Reed Foster" class="cred-photo">
         </div>
-        <div class="cred-block fade-in">
-          <h3>Qualifications</h3>
-          <ul class="cred-list">
-            <li>CFA Charterholder</li>
-            <li>Certified Public Accountant, Virginia (License #53657)</li>
-            <li>MBA, William &amp; Mary</li>
-            <li>Master of Accounting, UNC Chapel Hill</li>
-            <li>B.S. Systems Engineering, U.S. Naval Academy</li>
-          </ul>
+        <div class="cred-text">
+          <div class="cred-block">
+            <h3>Background</h3>
+            <p>Reed founded Stag Rock CPA in conjunction with Stag Rock LLC, his investment management firm.  His professional background spans investment banking at Moelis &amp; Company in New York, portfolio management, and eleven years of naval aviation including service as a TOPGUN graduate and instructor pilot.  He is a Boeing 777 First Officer with a major cargo carrier.</p>
+          </div>
+          <div class="cred-block">
+            <h3>Qualifications</h3>
+            <ul class="cred-list">
+              <li>CFA Charterholder</li>
+              <li>Certified Public Accountant, Virginia (License #53657)</li>
+              <li>MBA, William &amp; Mary</li>
+              <li>Master of Accounting, UNC Chapel Hill</li>
+              <li>B.S. Systems Engineering, U.S. Naval Academy</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
